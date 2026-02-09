@@ -1,9 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // 빌드 에러 무시 (배포 성공용)
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // 👇 eslint 설정은 삭제했습니다 (이게 원인이었습니다!)
   typescript: {
     ignoreBuildErrors: true,
   },
